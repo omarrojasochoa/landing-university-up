@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/popup.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- jQuery Validation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <title>UP</title>
+  </head>
+  <body>
+    <div class="fondoprincipal">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 banner-image">
+            <img
+              id="imageBanner"
+              class="banner"
+              alt="Universidad Pacífico"
+              src="img/banner-up-bk.webp"
+            />
+            <div class="banner-content">
+              <img
+                class="banner-program"
+                src="img/title.webp"
+                alt="Programa Inglés para Adultos Universidad Pacífico"
+              />
+              <div class="banner-content-text">
+                <p class="text">
+                  Nuestra excelencia y exigencia te llevarán al éxito
+                </p>
+                <p class="text-btn">
+                  INICIO DE CLASES<span>CADA 3 SEMANAS</span>
+                </p>
+              </div>
+            </div>
+            <div class="logo-mobile">
+              <a
+                href="https://www.up.edu.pe/idiomas/"
+                class="btn-logo-mb"
+                target="_blank"
+                ><img
+                  class="img-logo-mb"
+                  src="img/logo-up.webp"
+                  alt="Universidad Pacífico"
+              /></a>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="container-form">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="content-logo">
+                    <a href="https://www.up.edu.pe/idiomas/" target="_blank"
+                      ><img
+                        alt="Universidad Pacífico"
+                        src="img/logo-up.webp"
+                        class="img-fluid logo"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <form id="formUp">
+                <div class="row content-inputs">
+                  <div class="col-xl-6 col-12 input-form input-form-first">
+                    <input
+                      id="name"
+                      type="text"
+                      name="nombre"
+                      class="cajas"
+                      placeholder="Nombre"
+                      required
+                    />
+                  </div>
+                  <div class="col-xl-6 col-12 input-form">
+                    <input
+                      id="lastName"
+                      type="text"
+                      name="apellidos"
+                      class="cajas"
+                      placeholder="Apellidos"
+                    />
+                  </div>
+                </div>
+                <div class="row content-inputs">
+                  <div class="col-xl-6 col-12 input-form input-form-first">
+                    <input
+                      id="dni"
+                      type="text"
+                      name="dni"
+                      class="cajas"
+                      placeholder="DNI"
+                    />
+                  </div>
+                  <div class="col-xl-6 col-12 input-form">
+                    <input
+                      id="celular"
+                      type="text"
+                      name="telefono"
+                      class="cajas"
+                      placeholder="Teléfono"
+                    />
+                  </div>
+                </div>
+                <div class="row content-inputs">
+                  <div class="col-xl-6 col-12 input-form input-form-first">
+                    <input
+                      id="correo"
+                      type="email"
+                      name="correo"
+                      class="cajas"
+                      placeholder="E-mail"
+                    />
+                  </div>
+                  <div class="col-xl-6 col-12 input-form">
+                    <select id="lugar" name="lugar" class="cajas" required>
+                      <option value="" class="modalidad">Lugar</option>
+                      <option value="Lima" class="modalidad">Lima</option>
+                      <option value="Callao" class="modalidad">Callao</option>
+                      <option value="Amazonas" class="modalidad">
+                        Amazonas
+                      </option>
+                      <option value="Áncash" class="modalidad">Áncash</option>
+                      <option value="Apurímac" class="modalidad">
+                        Apurímac
+                      </option>
+                      <option value="Arequipa" class="modalidad">
+                        Arequipa
+                      </option>
+                      <option value="Ayacucho" class="modalidad">
+                        Ayacucho
+                      </option>
+                      <option value="Cajamarca" class="modalidad">
+                        Cajamarca
+                      </option>
+                      <option value="Cusco" class="modalidad">Cusco</option>
+                      <option value="Huancavelica" class="modalidad">
+                        Huancavelica
+                      </option>
+                      <option value="Huánuco" class="modalidad">Huánuco</option>
+                      <option value="Ica" class="modalidad">Ica</option>
+                      <option value="Junín" class="modalidad">Junín</option>
+                      <option value="La Libertad" class="modalidad">
+                        La Libertad
+                      </option>
+                      <option value="Lambayeque" class="modalidad">
+                        Lambayeque
+                      </option>
+                      <option value="Loreto" class="modalidad">Loreto</option>
+                      <option value="Madre de Dios" class="modalidad">
+                        Madre de Dios
+                      </option>
+                      <option value="Moquegua" class="modalidad">
+                        Moquegua
+                      </option>
+                      <option value="Pasco" class="modalidad">Pasco</option>
+                      <option value="Piura" class="modalidad">Piura</option>
+                      <option value="Puno" class="modalidad">Puno</option>
+                      <option value="San Martín" class="modalidad">
+                        San Martín
+                      </option>
+                      <option value="Tacna" class="modalidad">Tacna</option>
+                      <option value="Tumbes" class="modalidad">Tumbes</option>
+                      <option value="Ucayali" class="modalidad">Ucayali</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row content-inputs">
+                  <div class="col-xl-6 col-12 input-form input-form-first">
+                    <select class="cajas" id="programa" name="programa">
+                      <option value="" class="modalidad">Frecuencia</option>
+                      <option value="superintensivo" class="modalidad">
+                        Superintensivo
+                      </option>
+                      <option value="intensivo" class="modalidad">
+                        Intensivo
+                      </option>
+                      <option value="fasttrack" class="modalidad">
+                        Fast Track
+                      </option>
+                      <option value="regular" class="modalidad">Regular</option>
+                    </select>
+                  </div>
+
+                  <div class="col-xl-6 col-12 input-form">
+                    <select
+                      name="modalidad"
+                      id="modalidad"
+                      class="cajas"
+                      required
+                    >
+                      <option value="" class="modalidad">Modalidad</option>
+                      <option value="Presencial" class="modalidad">
+                        Presencial
+                      </option>
+                      <option value="Virtual" class="modalidad">Virtual</option>
+                    </select>
+                  </div>
+                  <div class="col-xl-6 col-12 input-form input-form-first">
+                    <div class="sede">
+                      <select
+                        name="sede"
+                        id="sede"
+                        class="cajas"
+                        style="display: none"
+                      >
+                        <option value=" " class="modalidad">Sede</option>
+                        <option value="Miraflores" class="modalidad">
+                          Miraflores
+                        </option>
+                        <option value="San Isidro" class="modalidad">
+                          San Isidro
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row content-inputs">
+                  <div class="col-md-12">
+                    <div>
+                      <div class="auth-data-content">
+                        <p class="contain-text">
+                          *Autorizo a la Universidad del Pacífico para usar mis
+                          datos personales para los fines mencionados
+                        </p>
+                        <div class="contain">
+                          Si
+                          <input
+                            type="radio"
+                            name="autorizacion"
+                            value="true"
+                          />
+                          <span class="checkmark"></span>
+                        </div>
+                        <div class="contain">
+                          No
+                          <input
+                            type="radio"
+                            name="autorizacion"
+                            value="false"
+                          />
+                          <span class="checkmark"></span>
+                        </div>
+                      </div>
+                      <div class="auth-data-content">
+                        <p class="contain-text">
+                          *Autorizo a la Universidad del Pacífico para usar mis
+                          datos personales por terceros.
+                        </p>
+                        <div class="contain">
+                          Si
+                          <input
+                            type="radio"
+                            name="autorizacionOptional"
+                            value="true"
+                          />
+                          <span class="checkmark"></span>
+                        </div>
+                        <div class="contain">
+                          No
+                          <input
+                            type="radio"
+                            name="autorizacionOptional"
+                            value="false"
+                          />
+                          <span class="checkmark"></span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-center mb-2">
+                        <a
+                          href="#"
+                          onclick="showPopup()"
+                          data-toggle="modal"
+                          data-target="#exampleModalCenter"
+                          class="referencia color-blue"
+                          >*Términos y condiciones</a
+                        >
+                      </div>
+                      <div>
+                        <input
+                          id="btnSubmit"
+                          type="submit"
+                          value="ENVIAR"
+                          class="boton"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="container">
+        <div class="row content-diff">
+          <div class="col-sm-6">
+            <div class="box-quality">
+              <img src="img/icon-1.webp" alt="icon UP" />
+              <p>Énfasis en el desarrollo de la expresión oral</p>
+            </div>
+            <div class="box-quality">
+              <img src="img/icon-2.webp" alt="icon UP" />
+              <p>Variedad de horarios y frecuencias</p>
+            </div>
+            <div class="box-quality">
+              <img src="img/icon-3.webp" alt="icon UP" />
+              <p>Logros y objetivos comunicativos</p>
+            </div>
+            <div class="box-quality">
+              <img src="img/icon-4.webp" alt="icon UP" />
+              <p>Grupos homogéneos y reducidos</p>
+            </div>
+          </div>
+          <div class="col-sm-6 img-content">
+            <img
+              class="person-model img-fluid img-responsive"
+              src="img/chico.webp"
+              alt="Ingles para adultos Universidad del Pacífico"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="frecuencias-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="mt-2">Frecuencias y Horarios</h2>
+            <div class="parent">
+              <div class="grid-container">
+                <div class="grid-header centered first-left">Frecuencia</div>
+                <div class="grid-header centered">N° Clases</div>
+                <div class="grid-header centered">Días</div>
+                <div class="grid-header centered first-right">Horario</div>
+
+                <div class="grid-item span-2 centered">Superintensivo</div>
+                <div class="grid-item span-2 centered">11</div>
+                <div class="grid-item span-2 centered">Lunes a viernes</div>
+                <div class="grid-item centered">7:00 a.m. a 10:02 a.m.</div>
+                <div class="grid-item centered">7:00 p.m. a 10:02 p.m.</div>
+
+                <div class="grid-item span-2 centered">Intensivo</div>
+                <div class="grid-item span-2 centered">11</div>
+                <div class="grid-item centered">Lunes y miércoles</div>
+                <div class="grid-item centered">7:00 p.m. a 10:02 p.m.</div>
+                <div class="grid-item centered">Martes y jueves</div>
+                <div class="grid-item centered">7:00 p.m. a 10:02 p.m.</div>
+
+                <div class="grid-item span-3 centered">Fast Track</div>
+                <div class="grid-item span-3 centered">22</div>
+                <div class="grid-item span-3 centered">Lunes a jueves</div>
+                <div class="grid-item centered">7:00 a.m. a 8:31 a.m.</div>
+                <div class="grid-item centered">1:00 p.m. a 2:31 p.m.</div>
+                <div class="grid-item centered">8:30 p.m. a 10:01 p.m.</div>
+
+                <div class="grid-item span-2 centered last-left">Regular</div>
+                <div class="grid-item span-2 centered">8</div>
+                <div class="grid-item centered">Sábado</div>
+                <div class="grid-item centered">8:30 a.m. a 12:40 p.m.</div>
+                <div class="grid-item centered">Martes</div>
+                <div class="grid-item centered last-right">
+                  6:00 p.m. a 10:10 p.m.
+                </div>
+              </div>
+              <div
+                class="btn-content d-flex justify-content-center mt-4 flex-column w-100"
+              >
+                <a
+                  href="https://bit.ly/OnlineMatricula_PacificoIdiomas_LandingCL"
+                  target="_blank"
+                  class="btn btn-frequency text-center"
+                  >INICIA TU EVALUACIÓN
+                  <span>SIN COSTO AQUÍ</span>
+                </a>
+                <p class="text-niveles">
+                  Precio por ciclo: <strong>S/ 825</strong> <br />
+                  Precio del libro por nivel: <strong>S/ 236</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="matricula-content">
+      <div class="container">
+        <h2>Pasos para realizar tu matrícula</h2>
+        <div class="row">
+          <div class="col-xl-4 col-md-6 col-12">
+            <img
+              class="person-model img-fluid img-responsive up-girl"
+              src="img/chica.webp"
+              alt="Ingles para adultos Universidad del Pacífico"
+            />
+          </div>
+          <div class="col-xl-8 col-md-6 col-12 box-matricula">
+            <div class="box-matricula-content col-12 col-xl-5">
+              <div><span class="circle">1</span></div>
+              <div class="matricula-text">
+                <span>Regístrate en:</span>
+                <a
+                  href="https://bit.ly/MatriculaOnline_textos_LandingCL"
+                  target="_blank"
+                  class="color-blue"
+                  >https://matriculaidiomas.up.edu.pe/login</a
+                >
+              </div>
+            </div>
+            <div class="box-matricula-content col-12 col-xl-5">
+              <div><span class="circle">2</span></div>
+              <div class="matricula-text">
+                <p>
+                  Ve a <strong>“Aprender un nuevo idioma”</strong>, selecciona
+                  <strong> INGLÉS</strong> y elige
+                  <strong>Communication Level.</strong>
+                </p>
+              </div>
+            </div>
+            <div class="box-matricula-content col-12 col-xl-5">
+              <div><span class="circle">3</span></div>
+              <div class="matricula-text">
+                <p>
+                  Selecciona <strong>“Iniciar examen” </strong>para rendir la
+                  evaluación sin costo.
+                </p>
+              </div>
+            </div>
+            <div class="box-matricula-content col-12 col-xl-5">
+              <div><span class="circle">4</span></div>
+              <div class="matricula-text">
+                <p>
+                  Al terminar, elige fecha y hora para tu entrevista vía llamada
+                  con un asesor pedagógico
+                </p>
+              </div>
+            </div>
+            <div class="box-matricula-content col-12 col-xl-5">
+              <div><span class="circle">5</span></div>
+              <div class="matricula-text">
+                <p>
+                  Con el resultado de la entrevista estarás habilitado para
+                  matricularte
+                </p>
+              </div>
+            </div>
+            <div class="box-matricula-content col-12 col-xl-5">
+              <div><span class="circle">6</span></div>
+              <div class="matricula-text">
+                <p>
+                  Realiza el pago desde la página web de
+                  <a
+                    class="color-blue"
+                    href="https://bit.ly/MatriculaOnline_textos_LandingCL"
+                    target="_blank"
+                    >Matrícula Online</a
+                  >, la banca móvil o banca por internet de tu banco o en
+                  agencias bancarias.
+                </p>
+              </div>
+            </div>
+            <div class="text-info">
+              <p>Universidad del Pacífico | RUC: 20109705129</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-12 content-social">
+            <a target="_blank" href="https://www.facebook.com/PacificoIdiomas"
+              ><i class="fa fa-facebook social"></i
+            ></a>
+            <a target="_blank" href="https://www.instagram.com/pacificoidiomas/"
+              ><i class="fa fa-instagram social"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/showcase/pacifico-idiomas/"
+              ><i class="fa fa-linkedin social"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@IdiomasPacifico2024"
+            >
+              <img
+                class="social"
+                width="25px"
+                src="img/icon-yt.webp"
+                alt="icon"
+            /></a>
+          </div>
+          <div class="col-md-9 col-12 text-footer">
+            <h5>
+              <a
+                href="https://www.up.edu.pe/idiomas/"
+                target="_blank"
+                class="d-block text-white"
+                style="font-size: 14px"
+                >idiomas.up.edu.pe</a
+              >
+            </h5>
+            <h5>idiomas.informes@up.edu.pe</h5>
+            <h5>219-0151 / 219-0152 opción 1</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popup.js"></script>
+
+    <script src="js/validaciones.js"></script>
+  </body>
+</html>
